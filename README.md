@@ -1,5 +1,4 @@
-# Semantic-Segmentation-of-Urban-Scenes
-# Semantic Segmentation on Cityscapes Dataset 🚗🏙️
+# Semantic Segmentation on Cityscapes Dataset 
 
 
 ## 🧠 Introduction
