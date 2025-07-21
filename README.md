@@ -1,7 +1,7 @@
 # Semantic Segmentation on Cityscapes Dataset 
 
 
-## 🧠 Introduction
+## Introduction
 
 Semantic segmentation is a key task in computer vision that involves classifying every pixel in an image into predefined categories. It's widely used in:
 - **Autonomous driving** (e.g., identifying roads, vehicles, pedestrians)
@@ -12,7 +12,7 @@ This project uses the **Cityscapes dataset**, which contains 5000 finely annotat
 
 ---
 
-## 🧩 Project Overview
+## Project Overview
 
 Our approach consisted of the following key steps:
 
@@ -26,9 +26,9 @@ Our approach consisted of the following key steps:
 
 ---
 
-## 🛠️ Approaches & Architectures
+## Approaches & Architectures
 
-### 1. 🧬 UNet (Baseline)
+### 1. UNet (Baseline)
 - Basic encoder-decoder with skip connections
 - Input Size: `256x256`
 - **Accuracy**: `83.80%`
@@ -36,7 +36,7 @@ Our approach consisted of the following key steps:
 
 ---
 
-### 2. 🧠 DeepLabV3+ (Best Performing)
+### 2. DeepLabV3+ (Best Performing)
 - Backbone: `ResNet-50 pretrained on ImageNet`
 - Concepts: `Atrous Convolution`, `ASPP`
 - Input Size: `256x512`
@@ -46,7 +46,7 @@ Our approach consisted of the following key steps:
 
 ---
 
-### 3. 🔍 Attention ResUNet
+### 3. Attention ResUNet
 - Introduced attention gates and residual connections
 - Input Size: `128x128`
 - **Accuracy**: `82.40%`
@@ -54,21 +54,21 @@ Our approach consisted of the following key steps:
 
 ---
 
-### 4. 🌐 PSPNet
+### 4. PSPNet
 - Used Pyramid Pooling for global + local context
 - Input Size: `128x128`
 - **Accuracy**: `82.10%`
 
 ---
 
-### 5. 🦾 YOLOv8 (Detection-based Attempt)
+### 5. YOLOv8 (Detection-based Attempt)
 - Attempted object detection on Cityscapes
 - Objective: Fine-tune for semantic regions like sky, road, buildings
 - **Result**: Limited success due to incomplete fine-tuning
 
 ---
 
-## ⛔ Blockers Faced
+## Blockers Faced
 
 - ❌ GPU crashes on higher input resolutions
 - ⚠️ Directory mismatches and shape errors in training
@@ -77,7 +77,7 @@ Our approach consisted of the following key steps:
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 | S. No | Model                   | Input Resolution | Validation Accuracy |
 |-------|-------------------------|------------------|---------------------|
@@ -89,14 +89,14 @@ Our approach consisted of the following key steps:
 
 ---
 
-## 🚀 Future Work
+##  Future Work
 
-- 📈 **Data Augmentation** to enrich training samples  
-- 🔍 **Higher input resolutions** for sharper segmentations  
-- 📐 **Optimizing IOU/Jaccard scores** directly as training objectives  
-- 🧩 Try **Dice / Tversky / Focal / Lovasz** losses  
-- 🔁 **Improved dilation schemes** for broader receptive fields  
-- 📦 **Complete YOLO finetuning** for semantic regions  
+-  **Data Augmentation** to enrich training samples  
+-  **Higher input resolutions** for sharper segmentations  
+-  **Optimizing IOU/Jaccard scores** directly as training objectives  
+-  Try **Dice / Tversky / Focal / Lovasz** losses  
+-  **Improved dilation schemes** for broader receptive fields  
+-  **Complete YOLO finetuning** for semantic regions  
 
 ---
 
