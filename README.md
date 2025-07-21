@@ -122,15 +122,4 @@ Visual comparisons between ground truth and predicted masks are available in the
 - [PSPNet](https://arxiv.org/abs/1612.01105)  
 - [YOLOv8](https://github.com/ultralytics/ultralytics)
 
----
-
-## 🤝 Acknowledgements
-
-Thanks to the Cityscapes team for the dataset and all the authors of referenced architectures.
-
----
-
-## 📌 Note
-
-This project was part of an academic research initiative and focuses on learning, experimentation, and innovation in semantic segmentation using deep learning.
 
