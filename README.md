@@ -16,13 +16,13 @@ This project uses the **Cityscapes dataset**, which contains 5000 finely annotat
 
 Our approach consisted of the following key steps:
 
-1. 📊 **Dataset Analysis** – Understanding Cityscapes format and valid classes  
-2. 🧼 **Preprocessing** – Image resizing, encoding masks, color remapping  
-3. 🖼️ **Visualization** – Input images and corresponding masks  
-4. 🏗️ **Model Development** – Trying various architectures  
-5. 🎯 **Loss Functions** – Experimenting with standard and custom ones  
-6. 🧪 **Post-Processing** – Applying CRF (Conditional Random Fields)  
-7. 📉 **Evaluation** – Using validation accuracy and IOU  
+1. **Dataset Analysis** – Understanding Cityscapes format and valid classes  
+2. **Preprocessing** – Image resizing, encoding masks, color remapping  
+3. **Visualization** – Input images and corresponding masks  
+4. **Model Development** – Trying various architectures  
+5. **Loss Functions** – Experimenting with standard and custom ones  
+6. **Post-Processing** – Applying CRF (Conditional Random Fields)  
+7. **Evaluation** – Using validation accuracy and IOU  
 
 ---
 
@@ -70,10 +70,10 @@ Our approach consisted of the following key steps:
 
 ## Blockers Faced
 
-- ❌ GPU crashes on higher input resolutions
-- ⚠️ Directory mismatches and shape errors in training
-- ⚙️ Debugging preprocessing pipelines and label encoding
-- 🧮 Required one-hot encoding + categorical cross-entropy in some models
+- GPU crashes on higher input resolutions
+- Directory mismatches and shape errors in training
+- Debugging preprocessing pipelines and label encoding
+- Required one-hot encoding + categorical cross-entropy in some models
 
 ---
 
@@ -100,7 +100,7 @@ Our approach consisted of the following key steps:
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - Source: [Cityscapes Dataset](https://www.cityscapes-dataset.com/)
 - Used: `gtFine` (masks) and `leftImg8bit` (images)
